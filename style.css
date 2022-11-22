@@ -5,12 +5,14 @@
   font-family: "Inter", sans-serif;
 }
 
-/* .body {} */
-
 /* intro section */
 
 .hamburger {
   margin: 25px;
+}
+
+.desktop-nav {
+  display: none;
 }
 
 .intro {
@@ -28,7 +30,7 @@
 
 .title {
   color: #ec5242;
-  margin: 17px;
+  margin: 15px;
 }
 
 .intro-title-1 {
@@ -42,15 +44,13 @@
   height: 120px;
   margin: 18px;
   margin-top: 30px;
-  position: relative;
+  width: 80%;
 }
 
 .summary-content {
   display: flex;
   margin: 5px;
-  width: 99%;
   background-color: #f9f9f9;
-  position: relative;
 }
 
 .summary-text {
@@ -59,12 +59,10 @@
   line-height: 25px;
   margin: 10px;
   text-align: left;
-  position: relative;
 }
 
 .start-info {
   padding-left: 20px;
-  position: absolute;
 }
 
 /* programs section */
@@ -197,4 +195,196 @@
 
 .arrow-down {
   margin-left: 5px;
+}
+
+/* desktop version here... */
+@media (min-width: 768px) {
+  /* intro section here */
+  .intro {
+    background-image: url(images/main_big.png);
+    height: 80vh;
+  }
+
+  .mobile-nav {
+    display: none;
+  }
+
+  .desktop-nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    height: 10vh;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    box-shadow: -1px 1px #eaeaea, -2px 2px #eaeaea, -3px 3px #eaeaea, -4px 4px #eaeaea, -5px 5px #eaeaea;
+  }
+
+  .items {
+    display: flex;
+    padding: 0;
+    list-style: none;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .nav-container {
+    display: flex;
+    gap: 10px;
+  }
+
+  .nav-btn {
+    margin: 20px;
+    width: 100px;
+    height: auto;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+
+  .intro-sect {
+    height: auto;
+  }
+
+  .title {
+    color: #ec5242;
+    padding-top: 100px;
+    margin-top: 70px;
+    width: 80vh;
+  }
+
+  .intro-title-1 {
+    font-size: 40px;
+    text-align: left;
+  }
+
+  .intro-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .summary {
+    display: flex;
+    background: #fff;
+    height: 120px;
+    margin-top: 30px;
+    width: 80vh;
+  }
+
+  .summary-content {
+    display: flex;
+    width: 80vh;
+    background-color: #f9f9f9;
+  }
+
+  .summary-text {
+    display: flex;
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  .start-info {
+    display: flex;
+    width: 80vh;
+    margin-top: 30px;
+  }
+
+  /* programs section here */
+
+  .program-sect {
+    display: block;
+    background-color: rgb(39, 42, 50);
+  }
+
+  .prog-holder {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .pg-list {
+    display: flex;
+    font-size: 25px;
+    color: #f5f5f5;
+    justify-content: center;
+    margin-top: 0;
+    padding-top: 40px;
+  }
+
+  .course-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+  }
+
+  .program-container {
+    display: flex;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.1);
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    margin: 4px;
+  }
+
+  .lft-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    margin: 10px;
+  }
+
+  .pg-info1 {
+    font-size: 14px;
+    line-height: 20px;
+    color: #ec5242;
+  }
+
+  .rgt-info {
+    width: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .rgt-info-txt {
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    color: #eaeaea;
+    line-height: 20px;
+    text-align: center;
+  }
+
+  /* featured Speakers here.. */
+  .speaker-container {
+    width: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .tutors {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .bio-container {
+    width: 100%;
+  }
+
+  .expand-sp-list {
+    display: none;
+  }
 }
