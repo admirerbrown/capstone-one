@@ -18,6 +18,7 @@
   - [Project Description .](#project-description-)
   - [Built With](#built-with)
   - [Live Demo](#live-demo)
+  - [Video Walkthrough](#video-walkthrough)
   - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Setup](#setup)
@@ -41,7 +42,10 @@ This capstone project is a website built for a social tech venture called [DEV-O
 - Html, Css ,JavaScript
 
 ## Live Demo
-["click here"](https://)
+["click here"](https://admirerbrown.github.io/capstone-one/)
+
+## Video Walkthrough
+["click here"](https://www.loom.com/share/4a25ad640eba4deab20dc67883137388)
 
 ## Getting Started
 
@@ -88,6 +92,7 @@ Contributions, issues, and feature requests are welcome!
 ## Acknowledgments
 
 - Hat tip to Microverse for providing the resources that enabled me to do this work
+- Speacial credits to @ 2015 Creative Commons Korea for providing this amazing behance design.
 
 ## License
 

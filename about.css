@@ -15,62 +15,77 @@
   margin: 25px;
 }
 
+/* toggle menu here  */
+.toggle-menu {
+  display: none;
+  width: 100%;
+  height: 100vh;
+  background-color: #ec5242;
+  flex-direction: column;
+  padding: 25px;
+  position: fixed;
+  opacity: 0.9;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  right: 0;
+  overscroll-behavior: contain;
+  z-index: 100;
+}
+
+.nav-btn {
+  visibility: visible;
+  margin-right: 20px;
+  width: 100px;
+  height: 50px;
+  border: 2px solid #272a31;
+  background-color: #fff;
+  color: #ec5242;
+  font-size: 15px;
+  margin-top: 15px;
+}
+
+.close-up {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
 .close-icon {
-  float: right;
+  width: 50px;
   padding-right: 30px;
 }
 
 .logo {
-  visibility: hidden;
   width: 100px;
 }
 
-.mobile-toggle {
-  /* display: none; */
-  /* background-color: #ec5242; */
-  height: 100vh;
-  width: 85%;
-  /* position: absolute; */
-  /* opacity: 0.9; */
-  font-size: 25px;
-  top: 0;
-  padding-top: 30px;
+.tog-item-container {
+  margin-top: 25px;
 }
 
-.items {
+.tog-list {
   display: flex;
   flex-direction: column;
+  gap: 30px;
   padding: 0;
   list-style: none;
 }
 
-.nav-btn {
-  visibility: hidden;
+.tog-item {
+  color: #fff;
+  font-size: 30px;
 }
 
-.desktop-nav {
+/* navigation ends here. */
+
+.desktop-container {
   display: none;
 }
-
-/* navigaion ends here. */
 
 .intro {
   background-image: url(images/mobile_intro_bg.png);
   background-size: contain;
-  width: auto;
-  height: 75vh;
-}
-
-.intro-sect {
-  height: auto;
-}
-
-.title {
-  display: flex;
-  flex-direction: column;
-  width: auto;
-  align-items: center;
-  margin: 15px;
 }
 
 .title_0 {
@@ -80,35 +95,39 @@
   font-weight: normal;
 }
 
-/* .intro-title-1 {
-  font-size: 30px;
-  text-align: center;
-  margin-top: 15px;
-  color: #ec5242;
-  font-weight: bolder;
-} */
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .intro-title-1 {
   background-image: url(images/text-bg.JPG);
-  font-size: 30px;
-  text-align: left;
   font-family: "COCOGOOSE", sans-serif;
   text-transform: uppercase;
   -webkit-background-clip: text;
   color: rgb(240, 75, 46, 0.7);
+  text-align: center;
+  font-weight: bolder;
+  margin-top: 25px;
+  font-size: 25px;
 }
 
 .summary-content {
   display: flex;
   background-color: #fff;
-  margin: 20px;
   border: 2px solid #eee;
+  margin: 25px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
 }
 
 .summary-text {
   display: flex;
   font-size: 15px;
-  line-height: 25px;
-  margin: 10px;
+  line-height: 32px;
   text-align: center;
 }
 
@@ -116,12 +135,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 50px;
 }
 
 .contact-us {
   font-size: 15px;
   text-align: center;
-  width: 40vh;
+  width: 50vh;
 }
 
 .email {
@@ -136,34 +156,64 @@
 }
 
 /* get to know us section */
+.program-sect {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .pg-list {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 24px;
+  font-size: 22px;
   justify-content: center;
   margin: 35px;
 }
 
 .set2 {
-  margin-top: 50px;
+  /* margin-top: 50px; */
   font-weight: bold;
+  text-align: center;
 }
 
 .prog-holder {
   display: flex;
   text-align: center;
-  margin: 10px;
+  margin: 15px;
   line-height: 25px;
+  font-size: 15px;
 }
 
-.action {
-  height: 60px;
-  width: 250px;
-  margin: 30px;
+.process {
+  background-image: url(images/process1.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  border: 2px solid #ccc;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  height: 200px;
+  width: 50vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.orange-line {
+  margin-top: 15px;
+}
+
+.line {
+  display: flex;
+  width: 50px;
+  height: 3px;
+  border: none;
   background-color: #ec5242;
-  border-style: none;
-  color: #eaeaea;
+}
+
+.line-to-me {
+  width: 100%;
 }
 
 .join-us {
@@ -175,43 +225,75 @@
 .flash-back {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  height: 100vh;
+  gap: 20px;
+  padding: 15px;
 }
 
 .main-cont {
   display: flex;
+  flex-direction: column;
+  width: auto;
+  justify-content: center;
+  gap: 20px;
+}
+
+.num1 {
+  display: flex;
+  background-image: url(images/mem1.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 230px;
+}
+
+.num2 {
+  display: flex;
+  background-image: url(images/mem2.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 230px;
+}
+
+.transbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(240, 75, 46, 0.7);
+  height: 100%;
+  width: 375px;
+}
+
+.mem-title {
+  font-size: 25px;
+  color: #fff;
+  text-align: center;
 }
 
 .speaker {
-  margin-top: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  text-align: center;
+  justify-content: center;
   gap: 15px;
+  text-align: center;
 }
 
 .test-title {
-  font-size: 24px;
-}
-
-.mem-details {
-  background-image: url(images/mem1.png);
-  background-repeat: no-repeat;
-  display: flex;
+  font-size: 25px;
 }
 
 /* partners sections */
 .pat-title {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
   margin-top: 20px;
 }
 
 .pat-sect {
   color: #eee;
-  font-size: 24px;
+  font-size: 30px;
   font-weight: bold;
 }
 
@@ -261,8 +343,17 @@
   text-decoration: none;
 }
 
+/* animation here */
+.nav-item:hover {
+  color: #ec5242;
+}
+
+.tog-item:hover {
+  color: #272a31;
+}
+
 /* desktop version here... */
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   /* intro section here */
 
   .mobile-nav {
@@ -304,6 +395,7 @@
 
   .top-nav {
     color: #fff;
+    font-size: 15px;
   }
 
   .desktop-nav {
@@ -348,13 +440,14 @@
     border: 4px solid #ec5242;
     background-color: #fff;
     color: #ec5242;
+    font-size: 15px;
   }
 
   .logo {
     visibility: visible;
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
+    margin: 10px;
   }
 
   /* section 1 */
@@ -364,7 +457,7 @@
 
   .intro {
     background-image: url(images/main_big.png);
-    height: 900px;
+    width: 100%;
   }
 
   .orange-line {
@@ -372,6 +465,7 @@
   }
 
   .line {
+    display: flex;
     width: 50px;
     height: 3px;
     border: none;
@@ -386,16 +480,29 @@
     margin-top: 50px;
   }
 
+  .title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+
   .title_0 {
     display: none;
   }
 
   .intro-title-1 {
+    background-image: url(images/text-bg.JPG);
+    font-family: "COCOGOOSE", sans-serif;
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+    color: rgb(240, 75, 46, 0.7);
     margin-top: 50px;
-    font-size: 35px;
+    font-size: 40px;
     text-align: center;
-    width: 65vh;
     font-weight: bolder;
+    width: 75vh;
   }
 
   .summary-content {
@@ -413,8 +520,11 @@
   }
 
   .start-info {
-    font-size: 15px;
     text-align: center;
+  }
+
+  .contact-us {
+    font-size: 18px;
   }
 
   .email {
@@ -428,11 +538,17 @@
 
   /* section 2 */
   .process {
+    background-image: url(images/process1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
     display: flex;
-    height: auto;
     border: 2px solid #ccc;
     margin-top: 25px;
     margin-bottom: 25px;
+    height: 250px;
+    width: 50vh;
+    justify-content: center;
+    align-items: center;
   }
 
   .program-sect {
@@ -440,6 +556,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
   }
 
   .prog-holder {
@@ -449,8 +566,13 @@
     line-height: 32px;
   }
 
+  .line-to-me {
+    width: 100%;
+  }
+
   .flash-back {
-    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 80vh;
     gap: 40px;
     width: 100%;
@@ -497,14 +619,20 @@
 
   .last-text {
     color: #fff;
+    font-size: 15px;
   }
 
   .final {
     gap: 50px;
     background-color: #272a31;
+    width: 100%;
   }
 
   .partners {
+    display: none;
+  }
+
+  .toggle-menu {
     display: none;
   }
 }
