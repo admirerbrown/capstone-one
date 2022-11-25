@@ -8,6 +8,7 @@
     <title>About Us page</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://kit.fontawesome.com/58789452ae.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="about.css" />
 </head>
 
@@ -18,22 +19,46 @@
                 <div class="mobile-nav">
                     <img class="hamburger" src="images/mobile_menu.png" alt="hamburger menu" />
                 </div>
-                <div class="desktop-nav mobile-toggle">
-                    <img class="close-icon" src="images/close_mobile_menu.png" alt="close menu button" />
-                    <div class="logo">
-                         <a href="index.html"><img class="logo" src="images/my_logo.png" alt="logo image" /></a>
-                    </div>
-                    <div class="nav-container">
-                        <ul class="items">
-                            <a href="">
-                                <li class="nav-item">About</li>
-                            </a>
-                            <a href=""><li class="nav-item">Programs</li></a>
-                            <a href=""><li class="nav-item">Join Us</li></a>
-                            <a href=""><li class="nav-item">Sponsors</li></a>
-                            <a href=""><li class="nav-item">Info</li></a>
+
+                <div class="desktop-container">
+                    <div class="sticky-top">
+                        <ul class="top-item">
+                            <li class="top-nav">
+                                <a href="https://twitter.com/brown_admirer"><i class="fa-brands fa-facebook-f"></i></a>
+                            </li>
+                            <li class="top-nav">
+                                <a href="https://twitter.com/brown_admirer"><i class="fa-brands fa-twitter"></i></a>
+                            </li>
+                            <li class="top-nav">English</li>
+                            <li class="top-nav">MyPage</li>
+                            <li class="top-nav">Layout</li>
                         </ul>
-                        <button class="nav-btn">Upcoming</button>
+                    </div>
+                    <div class="desktop-nav mobile-toggle">
+                        <img class="close-icon" src="images/close_mobile_menu.png" alt="close menu button" />
+                        <div class="logo">
+                            <a href="index.html"><img class="logo" src="images/my_logo.png" alt="logo image" /></a>
+                        </div>
+                        <div class="nav-container">
+                            <ul class="items">
+                                <a class="a-line" href="about.html">
+                                    <li class="nav-item">About</li>
+                                </a>
+                                <a class="a-line" href="">
+                                    <li class="nav-item">Programs</li>
+                                </a>
+                                <a class="a-line" href="">
+                                    <li class="nav-item">Join Us</li>
+                                </a>
+                                <a class="a-line" href="">
+                                    <li class="nav-item">Sponsors</li>
+                                </a>
+                                <a class="a-line" href="">
+                                    <li class="nav-item">Info</li>
+                                </a>
+                            </ul>
+                            <button class="nav-btn">Upcoming</button>
+                        </div>
                     </div>
                 </div>
             </header>
@@ -44,6 +69,9 @@
                         WE TRAIN THE NEXT GENERATION OF SOFTWARE DEVELOPERS STARTING EVERY
                         FALL.
                     </h1>
+                    <div class="orange-line">
+                        <hr class="line" />
+                    </div>
                 </div>
                 <div class="summary">
                     <div class="summary-content">
@@ -71,7 +99,12 @@
     <!-- programs section -->
     <section class="program-sect">
         <div class="pg-list">
-            <h3 class="set2">How our program works</h3>
+            <p class="set2">
+                How Our Program Works & View Of Our Development Process
+            </p>
+            <div class="orange-line">
+                <hr class="line" />
+            </div>
         </div>
 
         <div class="prog-holder">
@@ -81,11 +114,11 @@
                 with aspirations to gain in demand tech skills but is limited with
                 pressing social and environmental and financial challenges! We’re
                 looking for creative, determined, and individuals looking to change
-                their lives and achieve their dreams to to join community. We welcome
-                people at any stage and from deprived communities in Ghana. Develop
-                your skills and confidence with help from expert mentors and a
-                supportive global community!
+                their lives and achieve their dreams to to join our community.
             </p>
+        </div>
+        <div class="process">
+            <img src="images/process1.png" alt="image of our process" />
         </div>
 
         <div class="join-us">
@@ -98,19 +131,24 @@
     <section class="flash-back">
         <div class="speaker">
             <h3 class="test-title">Memories from previous cohorts</h3>
+            <div class="orange-line">
+                <hr class="line" />
+            </div>
             <p>Take a look at the last two cohorts which took place in Ghana</p>
         </div>
-        <div class="testimonial">
-            <div class="mem-container">
-                <div class="mem-details">
-                    <img class="thumbnail1_1" src="images/mem1.png" alt="image of speaker" />
+
+        <div class="main-cont">
+            <div class="num1">
+                <div class="transbox">
+                    <p class="mem-title">2019<br> DevOps bootcamp in Accra</p>
                 </div>
             </div>
-            <div class="mem-container">
-                <div class="mem-details">
-                    <img class="thumbnail1_1" src="images/mem2.png" alt="image of speaker" />
+            <div class="num2">
+                <div class="transbox">
+                    <p class="mem-title">2021<br> DevOps Training Of E.I.Ts</p>
                 </div>
             </div>
+
         </div>
     </section>
 
@@ -142,7 +180,9 @@
             <img src="images/my_logo.png" class="patner-img" alt="image of partners" />
         </div>
         <div class="footer-text">
-            <p class="last-text">2022-DevOps Foundation<br />Some Rights Reserved.</p>
+            <p class="last-text">
+                2022-DevOps Foundation<br />Some Rights Reserved.
+            </p>
         </div>
     </footer>
     <script src="index.js" async defer></script>

@@ -8,6 +8,7 @@
     <title>Software Developer Training School</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://kit.fontawesome.com/58789452ae.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -18,34 +19,48 @@
                 <div class="mobile-nav">
                     <img class="hamburger" src="images/mobile_menu.png" alt="hamburger menu button" />
                 </div>
-                <div class="desktop-nav mobile-toggle">
-                    <img class="close-icon" src="images/close_mobile_menu.png" alt="close menu button" />
-                    <div class="logo">
-                        <a href="index.html"><img class="logo" src="images/my_logo.png" alt="logo image" /></a>
-                    </div>
-                    <div class="nav-container">
-                        <ul class="items">
-                            <a href="about.html">
-                                <li class="nav-item">About</li>
-                            </a>
-                            <a href="">
-                                <li class="nav-item">Programs</li>
-                            </a>
-                            <a href="">
-                                <li class="nav-item">Join Us</li>
-                            </a>
-                            <a href="">
-                                <li class="nav-item">Sponsors</li>
-                            </a>
-                            <a href="">
-                                <li class="nav-item">Info</li>
-                            </a>
+                <div class="desktop-container">
+                    <div class="sticky-top">
+                        <ul class="top-item">
+                            <li class="top-nav"><a href="https://twitter.com/brown_admirer"><i
+                                        class="fa-brands fa-facebook-f"></i></a></li>
+                            <li class="top-nav"><a href="https://twitter.com/brown_admirer"><i
+                                        class="fa-brands fa-twitter"></i></a></li>
+                            <li class="top-nav">English</li>
+                            <li class="top-nav">MyPage</li>
+                            <li class="top-nav">Layout</li>
                         </ul>
-                        <button class="nav-btn">Upcoming</button>
                     </div>
+                    <div class="desktop-nav mobile-toggle">
 
+                        <img class="close-icon" src="images/close_mobile_menu.png" alt="close menu button" />
+                        <div class="logo">
+                            <a href="index.html"><img class="logo" src="images/my_logo.png" alt="logo image" /></a>
+                        </div>
+                        <div class="nav-container">
+                            <ul class="items">
+                                <a class="a-line" href="about.html">
+                                    <li class="nav-item">About</li>
+                                </a>
+                                <a class="a-line" href="">
+                                    <li class="nav-item">Programs</li>
+                                </a>
+                                <a class="a-line" href="">
+                                    <li class="nav-item">Join Us</li>
+                                </a>
+                                <a class="a-line" href="">
+                                    <li class="nav-item">Sponsors</li>
+                                </a>
+                                <a class="a-line" href="">
+                                    <li class="nav-item">Info</li>
+                                </a>
+                            </ul>
+                            <button class="nav-btn">Upcoming</button>
+                        </div>
+                    </div>
                 </div>
             </header>
+
             <div class="intro-content">
                 <div class="title">
                     <h3 class="title_0">"Welcome to DEV-OPS"</h3><br>
@@ -63,6 +78,7 @@
                 </div>
                 <div class="start-info">
                     <h2>Applications open on 16.02.2023</h2>
+                    <p>@National Museum of Korea, Art Center Nabi, etc.</p>
                 </div>
             </div>
         </div>
@@ -71,8 +87,11 @@
     <!-- programs section -->
     <section class="program-sect">
         <div class="course-list">
-            <div class="pg-list">
-                <h3 class="pg-banner">Main Programs</h3>
+            <div class="pat-title">
+                <h2 class="pat-sect">Main Program</h2>
+                <div class="orange-line">
+                    <hr class="line">
+                </div>
             </div>
 
             <div class="prog-holder">
@@ -131,8 +150,26 @@
                         </p>
                     </div>
                 </div>
+                <div class="program-container">
+                    <div class="lft-info">
+                        <div>
+                            <img class="pg-icon1" src="images/program_icon_04.png" alt="icons for program-list">
+                        </div>
+                        <p class="pg-info1">Wordpress Mastery for Web Design</p>
+                    </div>
+                    <div class="rgt-info">
+                        <p class="rgt-info-txt">Get ready for UX Design jobs with hands-on assignments. Learn how to
+                            conduct
+                            user research. Gain the skills, confidence, and experience needed to launch your career in
+                            UX
+                            Design.
+                        </p>
+                    </div>
+                </div>
             </div>
-
+            <div class="see-list">
+                <a href="" class="view-all">SEE THE WHOLE PROGRAM</a>
+            </div>
             <div class="join-us">
                 <button class="action">Join our upcoming cohort</button>
             </div>
@@ -141,12 +178,15 @@
 
     <!-- featured speakers section -->
     <section class="tutors">
-        <div class="speaker">
-            <h3>Featured tutors</h3>
+        <div class="pat-title speaker">
+            <h2 class="sp-tag">Featured Tutors</h2>
+            <div class="orange-line">
+                <hr class="line">
+            </div>
         </div>
 
         <div class="speaker-container">
-            <div class="speaker-info">
+            <!-- <div class="speaker-info">
                 <div class="speaker-img">
                     <img class="thumbnail1_1" src="images/tutor2.png" alt="image of speaker">
                 </div>
@@ -190,11 +230,48 @@
                             100 million people, nearly half of the world's population.</p>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
 
         <button class="expand-sp-list"> MORE <img class="arrow-down" alt="" src="images/arrow_down.png"></button>
     </section>
+    <!-- partners section -->
+    <section class="partners">
+        <div class="pat-title">
+            <h2 class="pat-sect">Partners</h2>
+            <div class="orange-line">
+                <hr class="line">
+            </div>
+        </div>
+
+
+        <div class="pat-list">
+            <div class="spon-img">
+                <img src="images/airbnb.png" class="patner-img" alt="image of partners" />
+            </div>
+            <div class="spon-img">
+                <img src="images/Microsoft-Logo.svg" class="patner-img" alt="image of partners" />
+            </div>
+            <div class="spon-img">
+                <img src="images/mozilla.png" class="patner-img" alt="image of partners" />
+            </div>
+            <div class="spon-img">
+                <img src="images/wikihow.png" class="patner-img" alt="image of partners" />
+            </div>
+            <div class="spon-img">
+                <img src="images/macarthur.png" class="patner-img" alt="image of partners" />
+            </div>
+        </div>
+    </section>
+    <!-- footer section -->
+    <footer class="final">
+        <div class="footer-img">
+            <img src="images/my_logo.png" class="patner-img" alt="image of partners" />
+        </div>
+        <div class="footer-text">
+            <p class="last-text">2022-DevOps Foundation<br />Some Rights Reserved.</p>
+        </div>
+    </footer>
     <script src="index.js"></script>
 </body>
 

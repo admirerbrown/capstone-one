@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+@import url("http://fonts.cdnfonts.com/css/cocogoose");
 
 * {
   padding: 0;
@@ -25,12 +26,12 @@
 }
 
 .mobile-toggle {
-  display: none;
-  background-color: #ec5242;
+  /* display: none; */
+  /* background-color: #ec5242; */
   height: 100vh;
   width: 85%;
-  position: absolute;
-  opacity: 0.9;
+  /* position: absolute; */
+  /* opacity: 0.9; */
   font-size: 25px;
   top: 0;
   padding-top: 30px;
@@ -39,8 +40,6 @@
 .items {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  margin: 25px;
   padding: 0;
   list-style: none;
 }
@@ -49,11 +48,11 @@
   visibility: hidden;
 }
 
-/* navigaion ends here. */
-
 .desktop-nav {
   display: none;
 }
+
+/* navigaion ends here. */
 
 .intro {
   background-image: url(images/mobile_intro_bg.png);
@@ -81,12 +80,21 @@
   font-weight: normal;
 }
 
-.intro-title-1 {
+/* .intro-title-1 {
   font-size: 30px;
   text-align: center;
   margin-top: 15px;
   color: #ec5242;
   font-weight: bolder;
+} */
+.intro-title-1 {
+  background-image: url(images/text-bg.JPG);
+  font-size: 30px;
+  text-align: left;
+  font-family: "COCOGOOSE", sans-serif;
+  text-transform: uppercase;
+  -webkit-background-clip: text;
+  color: rgb(240, 75, 46, 0.7);
 }
 
 .summary-content {
@@ -130,10 +138,16 @@
 /* get to know us section */
 .pg-list {
   display: flex;
-  font-size: 25px;
+  flex-direction: column;
+  align-items: center;
+  font-size: 24px;
   justify-content: center;
   margin: 35px;
-  text-decoration: underline;
+}
+
+.set2 {
+  margin-top: 50px;
+  font-weight: bold;
 }
 
 .prog-holder {
@@ -150,7 +164,6 @@
   background-color: #ec5242;
   border-style: none;
   color: #eaeaea;
-  position: relative;
 }
 
 .join-us {
@@ -162,7 +175,11 @@
 .flash-back {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  justify-content: center;
+}
+
+.main-cont {
+  display: flex;
 }
 
 .speaker {
@@ -170,8 +187,9 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   text-align: center;
-  gap: 20px;
+  gap: 15px;
 }
 
 .test-title {
@@ -179,12 +197,9 @@
 }
 
 .mem-details {
+  background-image: url(images/mem1.png);
+  background-repeat: no-repeat;
   display: flex;
-  width: auto;
-  height: 200px;
-  justify-content: center;
-  margin-bottom: 25px;
-  opacity: 0.5;
 }
 
 /* partners sections */
@@ -242,16 +257,76 @@
   width: 100px;
 }
 
+.a-line {
+  text-decoration: none;
+}
+
 /* desktop version here... */
 @media (min-width: 768px) {
   /* intro section here */
-  .intro {
-    background-image: url(images/main_big.png);
-    height: 70vh;
-  }
 
   .mobile-nav {
     display: none;
+  }
+
+  .fa-brands {
+    color: #fff;
+  }
+
+  .desktop-container {
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    box-shadow: -1px 1px #eaeaea, -2px 2px #eaeaea, -3px 3px #eaeaea, -4px 4px #eaeaea, -5px 5px #eaeaea;
+    top: 0;
+  }
+
+  .sticky-top {
+    display: flex;
+    height: 50px;
+    background-color: rgb(39, 42, 50);
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 20px;
+  }
+
+  .top-item {
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    list-style: none;
+    width: 30%;
+    position: static;
+  }
+
+  .top-nav {
+    color: #fff;
+  }
+
+  .desktop-nav {
+    display: flex;
+    height: 50px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+
+  .close-icon {
+    display: none;
+  }
+
+  .items {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    gap: 40px;
+    align-items: center;
   }
 
   .nav-item {
@@ -260,35 +335,9 @@
     text-decoration: none;
   }
 
-  .mobile-toggle {
-    display: none;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: #fff;
-    height: 10vh;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    box-shadow: -1px 1px #eaeaea, -2px 2px #eaeaea, -3px 3px #eaeaea, -4px 4px #eaeaea, -5px 5px #eaeaea;
-  }
-
-  .desktop-nav {
-    display: flex;
-    justify-content: space-around;
-  }
-
-  .items {
-    display: flex;
-    flex-direction: row;
-    padding: 0;
-    list-style: none;
-    gap: 15px;
-    align-items: center;
-  }
-
   .nav-container {
     display: flex;
-    gap: 10px;
+    gap: 60px;
   }
 
   .nav-btn {
@@ -296,6 +345,9 @@
     margin-right: 20px;
     width: 100px;
     height: 50px;
+    border: 4px solid #ec5242;
+    background-color: #fff;
+    color: #ec5242;
   }
 
   .logo {
@@ -306,12 +358,24 @@
   }
 
   /* section 1 */
-  .close-icon {
-    display: none;
-  }
-
   .intro-sect {
     height: auto;
+  }
+
+  .intro {
+    background-image: url(images/main_big.png);
+    height: 900px;
+  }
+
+  .orange-line {
+    margin-top: 15px;
+  }
+
+  .line {
+    width: 50px;
+    height: 3px;
+    border: none;
+    background-color: #ec5242;
   }
 
   .intro-content {
@@ -326,11 +390,8 @@
     display: none;
   }
 
-  /* .title {
-    color: #ec5242;
-  } */
-
   .intro-title-1 {
+    margin-top: 50px;
     font-size: 35px;
     text-align: center;
     width: 65vh;
@@ -339,8 +400,8 @@
 
   .summary-content {
     display: flex;
-    height: 20vh;
-    width: 80vh;
+    height: 30vh;
+    width: 100vh;
     justify-content: center;
     align-items: center;
   }
@@ -360,7 +421,20 @@
     text-decoration: underline;
   }
 
+  /* intro section ends here */
+  .join-us {
+    display: none;
+  }
+
   /* section 2 */
+  .process {
+    display: flex;
+    height: auto;
+    border: 2px solid #ccc;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+
   .program-sect {
     display: flex;
     flex-direction: column;
@@ -376,15 +450,49 @@
   }
 
   .flash-back {
-    height: 50vh;
+    display: flex;
+    height: 80vh;
+    gap: 40px;
+    width: 100%;
+  }
+
+  .main-cont {
+    display: flex;
+    flex-direction: row;
+    width: auto;
     justify-content: center;
     gap: 40px;
   }
 
-  .testimonial {
+  .num1 {
+    display: flex;
+    background-image: url(images/mem1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 250px;
+  }
+
+  .num2 {
+    display: flex;
+    background-image: url(images/mem2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 250px;
+  }
+
+  .transbox {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    align-items: center;
+    background-color: rgb(240, 75, 46, 0.7);
+    height: 100%;
+    width: 375px;
+  }
+
+  .mem-title {
+    font-size: 25px;
+    color: #fff;
+    text-align: center;
   }
 
   .last-text {
