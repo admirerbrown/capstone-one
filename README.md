@@ -27,7 +27,6 @@
   - [Author](#author)
   - [Contributing](#contributing)
   - [Acknowledgments](#acknowledgments)
-  - [License](#license)
 
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
@@ -88,13 +87,13 @@ LinkedIn: Samuel Ntow kyere
 ## Contributing
 
 Contributions, issues, and feature requests are welcome!
+issue-link [https://github.com/admirerbrown/capstone-one/issues]
 
 ## Acknowledgments
 
-- Hat tip to Microverse for providing the resources that enabled me to do this work
-- Speacial credits to @ 2015 Creative Commons Korea for providing this amazing behance design.
+- Hat tip to Microverse for providing the resources that enabled me to do this work.
+- Original design idea by [Cindy Shin in Behance](https://www.behance.net/adagio07).
 
-## License
 
 MIT License
 
