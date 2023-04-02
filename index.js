@@ -60,7 +60,9 @@ if (window.innerWidth < 768) {
     for (let i = 0; i < speakers.length; i += 1) {
       if (i < 1) {
         const tutor = document.querySelector('.speaker-container');
-        tutor.innerHTML += speakers.map((teacher) => `
+        tutor.innerHTML += speakers
+          .map(
+            (teacher) => `
   <div class="speaker-info automated">
                 <div class="speaker-img">
                     <img class="thumbnail1_1" src='${teacher.image}' alt="image of speaker">
@@ -78,7 +80,9 @@ if (window.innerWidth < 768) {
                     </div>
                 </div>
             </div>
-            `).join('');
+            `,
+          )
+          .join('');
       }
     }
     start = false;
@@ -124,7 +128,9 @@ if (window.innerWidth < 768) {
   });
 } else {
   const tutor = document.querySelector('.speaker-container');
-  tutor.innerHTML += speakers.map((teacher) => `
+  tutor.innerHTML += speakers
+    .map(
+      (teacher) => `
   <div class="speaker-info automated">
                 <div class="speaker-img">
                     <img class="thumbnail1_1" src='${teacher.image}' alt="image of speaker">
@@ -142,5 +148,7 @@ if (window.innerWidth < 768) {
                     </div>
                 </div>
             </div>
-            `).join('');
+            `,
+    )
+    .join('');
 }

@@ -1,108 +1,174 @@
 <a name="readme-top"></a>
+# 📖 DevOps Bootcamp <a name="about-project"></a>
 
-<div align="center">
+This project is a demo website for a boot-camp inspired by a design by Cindy Shin. It is mainly built with HTML, CSS and Vanilla JS
 
-  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
-  <br/>
-
-  <h3><b>Microverse README Template</b></h3>
-
-</div>
-
-<!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents
 
+- [📖 DevOps Bootcamp ](#-devops-bootcamp-)
 - [📗 Table of Contents](#-table-of-contents)
-- [Portfolio website](#portfolio-website)
-  - [Project Description .](#project-description-)
-  - [Built With](#built-with)
-  - [Live Demo](#live-demo)
-  - [Video Walkthrough](#video-walkthrough)
-  - [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Setup](#setup)
-  - [Install](#install)
-  - [Usage](#usage)
-  - [Author](#author)
-  - [Contributing](#contributing)
-  - [Acknowledgments](#acknowledgments)
+  - [🛠 Built With ](#-built-with-)
+    - [Tech Stack ](#tech-stack-)
+    - [Key Features ](#key-features-)
+  - [🚀 Live Demo ](#-live-demo-)
+  - [💻 Video Walkthrough ](#-video-walkthrough-)
+  - [💻 Getting Started ](#-getting-started-)
+    - [Prerequisites](#prerequisites)
+    - [Install](#install)
+    - [Usage](#usage)
+    - [Deployment](#deployment)
+  - [Authors](#authors)
+  - [🔭 Future Features ](#-future-features-)
+  - [🤝 Contributing ](#-contributing-)
+  - [⭐️ Show your support ](#️-show-your-support-)
+  - [🙏 Acknowledgments ](#-acknowledgments-)
+  - [📝 License ](#-license-)
 
-![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Portfolio website
+## 🛠 Built With <a name="built-with"></a>
 
-## Project Description .
+### Tech Stack <a name="tech-stack"></a>
+- HTML
+- CSS
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
-This capstone project is a website built for a social tech venture called [DEV-OPS] that gives senior high school graduates in deprived communities who for what ever reason could not enter into University a new hope and dream of training them to become software developers and the opportunity to lift themselves from poverty.
+<details>
+  <summary>Server</summary>
+  <ul>
+    <li><a href="https://netlify.app/">Netlify</a></li>
+  </ul>
+</details>
 
-## Built With
+<details>
+<summary>Database</summary>
+  <ul>
+    <li><a> API </a></li>
+  </ul>
+</details>
 
-- Html, Css ,JavaScript
+### Key Features <a name="key-features"></a>
 
-## Live Demo
-["click here"](https://admirerbrown.github.io/capstone-one/)
+- **Responsive Design**
+My website has a responsive design so that visitors can access my portfolio easily and comfortably on any device they may be using, whether it's a desktop computer or a smartphone.
 
-## Video Walkthrough
-["click here"](https://www.loom.com/share/4a25ad640eba4deab20dc67883137388)
+- **Detailed Program Information**
+The website provides detailed information about the bootcamp program, including what is taught and how it is structured.
 
-## Getting Started
 
-To get a local copy up and running follow these simple steps.
+- **Easy Registration**
+The website provides a platform for students to register for the bootcamp program, making it easy for them to sign up and get started.
 
-## Prerequisites
 
-- A computer running any operating system.
-- an internet connection
-- Have Git installed
-- A modern browser eg. Google Chrome
-- Knowledge of basic git commands
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Setup
 
-- link your computer to github
-- clone the repository
-- open the file in your code editor
-- set up Html and css linters for the project
+## 🚀 Live Demo <a name="live-demo"></a>
 
-## Install
+- [Project Link](https://admirerbrown.github.io/capstone-one/)
 
-- install node_models and project dependencies
-- ensure there are no errors
 
-## Usage
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-- run the project to ensure there are no linter errors
-- open index.html in your browser of choice
-- Enjoy!
+## 💻 Video Walkthrough <a name="video-walkthrough"></a>
+- [Watch Here](https://www.loom.com/share/4a25ad640eba4deab20dc67883137388)
 
-## Author
+## 💻 Getting Started <a name="getting-started"></a>
 
-Samuel N. Kyere
+- Open GitHub URL of repositry.
+- Download Code repo in zip.
+- Extract and open repo folder into visual studio code or any other Text Editor Software.
+- GitHub Repositry URL: https://github.com/admirerbrown/capstone-one.git
+  To get a local copy up and running follow these simple example steps.
+  
+  `git clone  https://github.com/admirerbrown/capstone-one.git`
 
-GitHub: @admirerbrown
-Twitter: @brown_admirer
-LinkedIn: Samuel Ntow kyere
 
-## Contributing
+### Prerequisites
+- Visual Studio Code
+- Knowldege About HTML / CSS / JAVASCRIPT ES6
+- Webhint
+- Stylelint
+- ESLint
+- node_modules checker
+- Github
+
+
+### Install
+
+Install this project with:
+
+```sh
+  npm install
+```
+
+
+### Usage
+
+To run the project in a development server, execute the following command:
+
+```sh
+  open with live Server
+```
+
+### Deployment
+
+You can deploy this project using:
+
+https://netlify.app/ OR GITHUB PAGES
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+## Authors
+👤 **Samuel Kyere**
+
+- GitHub: [@githubhandle](https://github.com/admirerbrown)
+- Twitter: [@twitterhandle](https://twitter.com/brown_admirer)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/samuel-ntow-kyere-5036741b4/)
+
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+## 🔭 Future Features <a name="future-features"></a>
+
+
+- [ ] **Add form for registration**
+- [ ] **Improve with React**
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
-issue-link [https://github.com/admirerbrown/capstone-one/issues]
 
-## Acknowledgments
+Feel free to check the [issues page](https://github.com/admirerbrown/capstone-one/issues).
 
-- Hat tip to Microverse for providing the resources that enabled me to do this work.
-- Original design idea by [Cindy Shin in Behance](https://www.behance.net/adagio07).
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-MIT License
+## ⭐️ Show your support <a name="support"></a>
 
-Copyright (c),2022 [Samuel N. Kyere]
+If you like this project please follow me on github and give stars to my repo.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-This project is MIT licensed.
+
+- I would like to thank Microverse for providing me with the resources and guiding me to complete this project.
+- Original design idea by Cindy Shin on [Behance](https://www.behance.net/adagio07).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+## 📝 License <a name="license"></a>
+
+This project is [MIT]() licensed.
+ 
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
